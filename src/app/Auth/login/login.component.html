@@ -1,0 +1,40 @@
+<div class="containers">
+  <div class="main-content">
+    <div class="login-container">
+      <form [formGroup]="loginForm">
+        <h3 class="title">Login</h3>
+        <h6 class="subtitle">Please sign in to continue</h6>
+
+        <div class="input-group mt-5">
+          <input
+            type="text"
+            placeholder="Username"
+            class="form-control"
+            formControlName="Username"
+          />
+        </div>
+
+        <div class="input-group mt-3">
+          <input
+            type="password"
+            placeholder="Password"
+            class="form-control"
+            formControlName="password"
+          />
+        </div>
+        <label class="forgetpass mt-1" routerLink="/ForgetPassword"
+          >Forget Password?</label
+        >
+        <div class="mt-5">
+          <button type="submit" class="btn btn-primary" (click)="onsubmit()">
+            Login
+          </button>
+        </div>
+        <div>
+          <label class="signup">Don’t have an account? </label>
+          <span routerLink="/signup">&nbsp;Sign up</span>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
