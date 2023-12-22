@@ -1,4 +1,5 @@
 <div class="containers">
+  <!-- <img class="title" src="../../assets/Images/e-commerce.png"> -->
   <div class="main-content">
     <div class="login-container">
       <form [formGroup]="loginForm">
@@ -10,7 +11,7 @@
             type="text"
             placeholder="Username"
             class="form-control"
-            formControlName="Username"
+            formControlName="username"
           />
         </div>
 
@@ -26,7 +27,8 @@
           >Forget Password?</label
         >
         <div class="mt-5">
-          <button type="submit" class="btn btn-primary" (click)="onsubmit()">
+          <button type="submit" class="btn btn-primary" (click)="onsubmit()"
+          routerLink="/pages">
             Login
           </button>
         </div>

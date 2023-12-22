@@ -3,7 +3,11 @@
 .containers {
   height: 100vh;
   /* background-color: #efece7; */
-  background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+  /* background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); */
+  background-image: url('../../../assets/Images/e.jpg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
 
 }
 .main-content {
@@ -15,13 +19,13 @@
   position: relative;
   height: 550px;
   width: 300px;
-  background-color: white;
+  background: transparent;
   align-items: center;
   border-radius: 20px;
   margin: 5rem;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
 
 }
 
@@ -67,17 +71,18 @@ button {
 
 .forgetpass {
   position: relative;
-  font-size: 0.9rem;
+  font-size: 1rem;
   float: right;
-  color: gray;
+  /* color: gray; */
   font-family: "Afacad", sans-serif;
+  text-decoration: underline;
+  color: black;
 }
 
-.forgetpass:hover {
+/* .forgetpass:hover {
   color: black;
-  text-decoration: underline;
-  font-family: "Afacad", sans-serif;
-}
+
+} */
 
 .signup {
   color: gray;
@@ -85,12 +90,6 @@ button {
   margin-top: 110px;
   font-size: 0.9rem;
 }
-
-/* .signup:hover {
-  color: black;
-  text-decoration: underline;
-  font-family: "Afacad", sans-serif;
-} */
 
 span {
   color: gray;

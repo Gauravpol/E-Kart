@@ -1,0 +1,98 @@
+@import url("https://fonts.googleapis.com/css2?family=Afacad:wght@500&display=swap");
+
+.containers {
+  height: 100vh;
+  background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea);
+}
+.main-content {
+  display: flex;
+  justify-content: center;
+}
+
+.otp-container {
+  height: 450px;
+  width: 300px;
+  background-color: white;
+  border-radius: 20px;
+  margin: 5rem;
+  padding: 2rem;
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+
+}
+
+.otp-container h4 {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 500;
+  font-family: "Afacad", sans-serif;
+}
+.subtitle1 {
+  color: gray;
+  font-size: 1rem;
+  font-family: "Afacad", sans-serif;
+  padding: 0.5rem;
+}
+
+.subject {
+  display: flex;
+  padding-left: 1.25rem;
+  color: gray;
+  font-size: 1rem;
+  font-family: "Afacad", sans-serif;
+}
+
+:where(.input-field) {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.input-field {
+  flex-direction: row;
+  column-gap: 10px;
+}
+.input-field input {
+  height: 45px;
+  width: 42px;
+  border-radius: 10px;
+  outline: none;
+  font-size: 1.125rem;
+  text-align: center;
+  border: 1px solid #a5a0a0;
+  font-family: "Afacad", sans-serif;
+}
+.input-field input:focus {
+  box-shadow: 0 1px 0 rgba(0, 0, 0, 0.1);
+}
+.input-field input::-webkit-inner-spin-button,
+.input-field input::-webkit-outer-spin-button {
+  display: none;
+}
+
+.resend-otp {
+  position: relative;
+  font-size: 1rem;
+  float: right;
+  color: gray;
+  font-family: "Afacad", sans-serif;
+  text-decoration: underline;
+}
+
+.resend-otp:hover {
+  color: black;
+}
+
+button {
+  height: 40px;
+  width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 500;
+  border: none;
+  font-family: "Afacad", sans-serif;
+  justify-content: center;
+  margin-top: 1.2rem;
+
+}

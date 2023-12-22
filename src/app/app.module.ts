@@ -8,13 +8,17 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LoginComponent } from './Auth/login/login.component';
 import { ForgetPasswordComponent } from './Auth/forget-password/forget-password.component';
 import { SignupComponent } from './Auth/signup/signup.component';
+import { OtpVerifyComponent } from './Auth/otp-verify/otp-verify.component';
+import { ResetPasswordComponent } from './Auth/reset-password/reset-password.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
     ForgetPasswordComponent,
-    SignupComponent
+    SignupComponent,
+    OtpVerifyComponent,
+    ResetPasswordComponent
   ],
   imports: [
     BrowserModule,

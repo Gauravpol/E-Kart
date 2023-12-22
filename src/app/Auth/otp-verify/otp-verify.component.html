@@ -1,0 +1,29 @@
+<div class="containers">
+  <div class="main-content">
+    <div class="otp-container">
+      <h4 class="mt-5">Verification Code</h4>
+      <label class="subtitle1"
+        >Enter verfification code sent on your email address.</label
+      >
+      <form>
+        <label class="subject mt-4">Code</label>
+        <div class="input-field mt-2">
+          <input type="number" maxlength="1" placeholder="-" />
+          <input type="number" maxlength="1" placeholder="-" />
+          <input type="number" maxlength="1" placeholder="-" />
+          <input type="number" maxlength="1" placeholder="-" />
+          <!-- <input type="number" disabled /> -->
+        </div>
+        <span class="resend-otp mt-2">Resend Code?</span>
+        <div class="mt-5">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            routerLink="/resetPassword">
+            Verify OTP
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

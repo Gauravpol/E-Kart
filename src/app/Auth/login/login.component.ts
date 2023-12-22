@@ -23,6 +23,9 @@ constructor(private fb : FormBuilder){
 
   
   onsubmit(){
+
+    console.log("data-->" +JSON.stringify(this.loginForm.value));
+    
       
   }
 }
