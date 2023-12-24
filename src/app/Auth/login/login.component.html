@@ -1,12 +1,23 @@
 <div class="containers">
-  <!-- <img class="title" src="../../assets/Images/e-commerce.png"> -->
+  <h1 class="main-title">
+    E-<span class="sub-mainT"
+      >kart
+      <span style="color: black; font-size: 1rem"
+        >online shopping app</span
+      ></span
+    >
+  </h1>
+
   <div class="main-content">
     <div class="login-container">
       <form [formGroup]="loginForm">
         <h3 class="title">Login</h3>
         <h6 class="subtitle">Please sign in to continue</h6>
 
-        <div class="input-group mt-5">
+        <div class="input-group mt-5 ">
+          <span class="input-group-text">
+            <i class="fas fa-user"></i>
+          </span>
           <input
             type="text"
             placeholder="Username"
@@ -14,7 +25,8 @@
             formControlName="username"
           />
         </div>
-
+        
+<!-- 
         <div class="input-group mt-3">
           <input
             type="password"
@@ -22,19 +34,42 @@
             class="form-control"
             formControlName="password"
           />
+        </div> -->
+
+        <div class="input-group mt-3">
+          <span class="input-group-text pr-3" id="passwordToggle">
+            <i class="fas fa-lock pl-2"></i>
+          </span>
+
+          <input
+            type="password"
+            placeholder="Password"
+            class="form-control"
+            formControlName="password"
+            id="passwordInput"
+          />
+          <span class="input-group-text" id="passwordToggle">
+            <i class="fas fa-eye-slash"></i>
+          </span>
         </div>
+
+        
         <label class="forgetpass mt-1" routerLink="/ForgetPassword"
           >Forget Password?</label
         >
         <div class="mt-5">
-          <button type="submit" class="btn btn-primary" (click)="onsubmit()"
-          routerLink="/pages">
+          <button
+            type="submit"
+            class="btn btn-primary"
+            (click)="onsubmit()"
+            routerLink="/pages"
+          >
             Login
           </button>
         </div>
         <div>
           <label class="signup">Don’t have an account? </label>
-          <span routerLink="/signup">&nbsp;Sign up</span>
+          <span class="sign-span" routerLink="/signup">&nbsp;Sign up</span>
         </div>
       </form>
     </div>

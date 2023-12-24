@@ -4,38 +4,48 @@
   height: 100vh;
   /* background-color: #efece7; */
   /* background: linear-gradient(to right, #ada996, #f2f2f2, #dbdbdb, #eaeaea); */
-  background-image: url('../../../assets/Images/e.jpg');
-  background-size: cover;
-  background-position: center;
-  width: 100%;
-
+  background-image: url("../../../assets/Images/ee.jpg");
+  /* background-size: cover; */
+  background-size: auto 90%;
+  background-position: right top;
+  background-repeat: no-repeat;
+}
+.main-title {
+  font-family: "Afacad", sans-serif;
+  font-size: 2.5rem;
+  padding: 1rem 2rem;
+  color: greenyellow;
+}
+.sub-mainT {
+  color: #0d6efd;
+  font-size: 2rem;
 }
 .main-content {
   display: flex;
-  justify-content: center;
+  /* justify-content: center; */
+  /* float: left; */
+  flex: start;
 }
 
 .login-container {
   position: relative;
-  height: 550px;
-  width: 300px;
-  background: transparent;
+  height: 500px;
+  width: 330px;
+  background: white;
   align-items: center;
-  border-radius: 20px;
-  margin: 5rem;
+  margin: 1rem 0 0 4rem;
   padding: 2rem;
   text-align: center;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); 
-
+  /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);  */
 }
 
 .title {
   text-align: center;
-  margin-top: 5rem;
-  /* text-align: start; */
+  margin-top: 2rem;
   font-weight: 700;
   font-size: 2em;
   font-family: "Afacad", sans-serif;
+  letter-spacing: 0.04em;
 }
 .subtitle {
   color: gray;
@@ -43,10 +53,13 @@
   font-size: 0.8em;
 }
 
+
+
 input::placeholder {
   color: gray;
   font-family: "Afacad", sans-serif;
 }
+
 
 input {
   padding-left: 20px;
@@ -56,49 +69,132 @@ input {
   /* border: 1px solid rgb(146, 136, 136); */
 }
 
+.form-control:focus {
+  outline: none !important; 
+  /* box-shadow: none !important;
+  border-color: rgba(0, 0, 0, 0.15) !important; */
+}
+
+
 button {
   height: 40px;
   width: 120px;
-  border-radius: 10px;
+  /* border-radius: 10px; */
   cursor: pointer;
   font-weight: 500;
   transition: 0.5s;
   /* float: right; */
-  /* background-color: #f5b14a; */
+  background-color: #f45e3d;
   /* background: linear-gradient(135deg, #bebcbc 10%, #000000 100%); */
   border: none;
 }
 
 .forgetpass {
   position: relative;
-  font-size: 1rem;
+  font-size: 0.9rem;
   float: right;
-  /* color: gray; */
+  color: gray;
   font-family: "Afacad", sans-serif;
   text-decoration: underline;
-  color: black;
+  /* color: black; */
 }
-
-/* .forgetpass:hover {
-  color: black;
-
-} */
+.forgetpass:hover {
+  color: #0d6efd;
+}
 
 .signup {
   color: gray;
   font-family: "Afacad", sans-serif;
-  margin-top: 110px;
+  margin-top: 80px;
   font-size: 0.9rem;
 }
 
-span {
+.sign-span {
   color: gray;
   font-family: "Afacad", sans-serif;
-  margin-top: 110px;
   font-size: 0.9rem;
   color: #0d6efd;
 }
 
-span:hover {
+.sign-span:hover {
   text-decoration: underline;
+}
+
+@media screen and (max-width: 1600px) {
+  .containers {
+    background-position: right;
+    background-size: auto 85%;
+  }
+}
+@media screen and (max-width: 1420px) {
+  .containers {
+    background-position: right;
+    background-size: auto 75%;
+  }
+}
+@media screen and (max-width: 1290px) {
+  .containers {
+    background-position: right;
+    background-size: auto 62%;
+  }
+}
+
+@media screen and (max-width: 1140px) {
+  .containers {
+    background-position: right;
+    background-size: auto 57%;
+  }
+  .login-container {
+    max-width: 300;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 1060px) {
+  .containers {
+    background-position: right;
+    background-size: auto 55%;
+  }
+  .login-container {
+    max-width: 250px;
+    padding: 2rem;
+  }
+}
+
+@media screen and (max-width: 960px) {
+  .containers {
+    background-position: right;
+    background-size: auto 40%;
+  }
+  .login-container {
+    max-width: 250px;
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 800px) {
+  .containers {
+    background-position: right;
+    background-size: auto 35%;
+  }
+}
+
+@media screen and (max-width: 726px) {
+  .containers {
+    background-position: right;
+    background-size: auto 60%;
+  }
+  .main-content {
+    display: flex;
+    justify-content: center;
+  }
+  .login-container {
+    margin: 1rem;
+    width: 90%;
+    max-width: 280px;
+    padding: 2rem;
+    text-align: center;
+    justify-content: center;
+  }
 }
