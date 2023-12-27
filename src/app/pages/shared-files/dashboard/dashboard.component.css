@@ -1,0 +1,59 @@
+.containers {
+  height: auto;
+  padding: 0.5rem;
+  background-color: #e7e9e9;
+}
+
+h2 {
+  font-family: "Afacad", sans-serif;
+  font-size: 1.3rem;
+  padding: 15px 20px;
+}
+p {
+  text-align: center;
+}
+
+.card {
+  margin: 20px auto;
+  border-radius: 0px;
+}
+
+.grid-container {
+  display: flex;
+  overflow: scroll;
+}
+
+.card-body {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 15px;
+}
+
+.grid-container::-webkit-scrollbar {
+  overflow-x: hidden;
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.recommendation::-webkit-scrollbar {
+  overflow-x: hidden;
+}
+
+.recommendation-container {
+  display: flex;
+  min-width: max-content;
+  background-color: white;
+}
+
+.suggestion-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
