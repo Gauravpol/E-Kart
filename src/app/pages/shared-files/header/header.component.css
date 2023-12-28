@@ -1,7 +1,19 @@
+
+.header-content{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  padding: 0.7rem;
+  /* border: 2px solid green; */
+
+}
 .searchbar {
-  width: 25rem;
+  width: 40vw;
   font-family: "Afacad", sans-serif;
-  position: relative;
+  /* margin-left: 4rem; */
+  height: min-content;
+  padding: 8px 15px;
 }
 
 .navbar-brand {
@@ -10,6 +22,8 @@
   color: greenyellow;
   font-weight: 700;
   letter-spacing: 0.05em;
+  margin-top: -10px;
+  /* margin-left: 4rem; */
 }
 .sub-mainT {
   color: #0d6efd;
@@ -18,27 +32,40 @@
 
 button[type="submit"] {
   cursor: default;
+
 }
 
 .searchIcon {
-  position: absolute;
-  right: 20px;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  right: 50px;
+  bottom: 5px;
   background: transparent;
   border: none;
   cursor: pointer;
 }
 
-.searchIcon i {
-  /* color: #aaa;  */
-}
-
-.searchIcon:hover i {
-  color: #333;
-}
-
 input[type="search"]::-webkit-search-cancel-button,
 input[type="search"]::-webkit-search-results-decoration {
   -webkit-appearance: none;
+}
+
+.icons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+
+}
+.icons i{
+  color: rgb(99, 98, 98);
+}
+.icons p{
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-family: "Afacad", sans-serif;
+
+}
+
+.list{
+  background-color: black;
 }

@@ -11,6 +11,7 @@ import { SignupComponent } from './Auth/signup/signup.component';
 import { OtpVerifyComponent } from './Auth/otp-verify/otp-verify.component';
 import { ResetPasswordComponent } from './Auth/reset-password/reset-password.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
