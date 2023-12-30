@@ -1,0 +1,29 @@
+.container-fluid{
+    height: auto;
+  padding: 0.5rem;
+  background-color: #e7e9e9;
+}
+
+
+.title{
+background-color: white;
+padding: 1rem;
+}
+
+ h4{
+  font-family: "Afacad", sans-serif;
+}
+
+.address{
+  background-color: white;
+  padding: 1rem;
+}
+ .address li{
+  font-family: "Afacad", sans-serif;
+  gap: 10px;
+}
+
+.cart-item{
+  background-color: white;
+  padding: 1rem;
+}

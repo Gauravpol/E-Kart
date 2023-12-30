@@ -1,0 +1,24 @@
+app-header{
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    height: 4rem;
+}
+
+.content-container {
+    min-height: calc(100vh - 4rem );
+    overflow: scroll; 
+    position: relative;
+    top: 4rem;
+}
+
+main{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+.content-container::-webkit-scrollbar{
+    display: none;
+  }

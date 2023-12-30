@@ -1,0 +1,57 @@
+.product-categories {
+    background-color: rgb(6, 3, 32);
+    color: white;
+    text-align: center;
+    height: max-content;
+  }
+  
+  .list-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  
+  ul li {
+    list-style: none;
+    padding: 0.6rem;
+    font-family: "Afacad", sans-serif;
+    font-size: 1rem;
+  }
+  .list-wrapper a {
+    position: relative;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    cursor: default;
+  }
+  
+  .list-wrapper a::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 3px;
+    background-color: rgb(241, 35, 69);
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .list-wrapper a:hover::before {
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 700px) {
+    .product-categories{
+      margin-top:1.8rem;
+  
+    }
+    .list-wrapper {
+      flex-direction: row;
+      align-items: center; 
+    }
+  
+    ul li {
+      padding: 1rem;
+      font-size: 0.8rem;
+    }
+  }

@@ -1,0 +1,12 @@
+<div class="product-categories w-100">
+  <div class="container-fluid">
+    <ul class="list-wrapper">
+      <li *ngFor="let list of categoryList">
+        <span>
+          <a *ngIf="list.Link" [routerLink]="list.Link">{{ list.name }}</a>
+          <a *ngIf="!list.Link">{{ list.name }}</a>
+        </span>
+      </li>
+    </ul>
+  </div>
+</div>

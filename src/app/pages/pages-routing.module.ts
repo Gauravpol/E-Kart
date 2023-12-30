@@ -1,14 +1,18 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { HomeComponent } from './home/home.component';
-import { DashboardComponent } from './shared-files/dashboard/dashboard.component';
+import { DashboardComponent } from './shared-component/dashboard/dashboard.component';
+import { PagesComponent } from './pages/pages.component';
+import { ViewcartComponent } from './shared-component/viewcart/viewcart.component';
+import { ElectronicsComponent } from './product/categories/electronics/electronics.component';
 
 const routes: Routes = [
-  {path:'',component:HomeComponent,
+  {path:'',component:PagesComponent,
 
   children:[
-    {path:'dashboard',component:DashboardComponent},
-    {path:'',redirectTo:'/pages/dashboard',pathMatch:'full'}
+    {path:'Dashboard',component:DashboardComponent},
+    {path:'viewCart',component:ViewcartComponent},
+    {path:'Electronics',component:ElectronicsComponent},
+    {path:'',redirectTo:'/pages/Dashboard',pathMatch:'full'}
   ]
 },
 ];

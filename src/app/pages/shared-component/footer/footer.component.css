@@ -1,0 +1,30 @@
+.container-fluid {
+  width: 100%;
+  text-align: center;
+  font-family: "Afacad", sans-serif;
+  margin-top: 2rem;
+  padding: 20px;
+}
+
+.footer-item {
+  text-align: left;
+  padding: 0 15px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  font-size: 1rem;
+  text-transform: uppercase;
+  color: grey;
+}
+a {
+  font-size: 0.8rem;
+  font-weight: 550;
+  display: block;
+  line-height: 18px;
+  color: white;
+}
+
+.footer-item a:hover {
+  text-decoration: underline;
+}

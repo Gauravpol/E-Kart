@@ -1,0 +1,90 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-white py-0">
+  <div class="header-content">
+    <a class="navbar-brand mt-1" routerLink="/pages/Dashboard"
+      >E-<span class="sub-mainT">kart</span></a
+    >
+
+    <form class="d-flex mt-2">
+      <input
+        class="form-control searchbar"
+        type="search"
+        placeholder="Search for Product, Brands, and More"
+      />
+      <button class="searchIcon btn" type="submit">
+        <i class="fas fa-search"></i>
+      </button>
+    </form>
+
+    <ul class="nav side-item ms-3">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="/pages/viewCart"
+          ><i class="fa fa-shopping-cart fa-lg me-1"></i>Cart</a
+        >
+      </li>
+
+      <li class="nav-item">
+        <button
+          type="button"
+          class="btn border-0"
+          data-bs-container="body"
+          data-bs-toggle="popover"
+          data-bs-placement="left"
+          id="popoverBtn"
+        >
+        <a class="nav-link d-flex align-items-center">
+          <span>
+            <i class="fa fa-user-circle fa-lg me-2"></i>Gaurav
+          </span>
+          <i class="fa fa-chevron-down ms-1"></i>
+        </a>
+        </button>
+      </li>
+    </ul>
+
+    <div id="popoverContent" class="d-none">
+      <div class="d-flex flex-column">
+        <a class="text-decoration-none text-dark mb-2">
+          <i class="fa fa-user-circle fa-sm me-2"></i>My Profile</a
+        >
+        <a class="text-decoration-none text-dark mb-2 mt-2"
+          ><i class="fas fa-shopping-cart fa-sm me-2"></i>Orders</a
+        >
+        <a class="text-decoration-none text-dark mb-2 mt-2">
+          <i class="fas fa-tags fa-sm me-2"></i>Cupons</a
+        >
+        <a class="text-decoration-none text-dark mb-2 mt-2">
+          <i class="far fa-heart fa-sm me-2"></i>Wishlist</a
+        >
+        <a class="text-decoration-none text-dark mb-2 mt-2"
+          ><i class="far fa-bell fa-sm me-2"></i>Notification</a
+        >
+        <a routerLink="/login" class="text-decoration-none text-dark mb-2 mt-2">
+          <i class="fas fa-sign-out-alt fa-sm me-2"></i>Logout</a
+        >
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- <div class="header-bottom">
+    <ul>
+      <li class="nav-item">
+        <a class="nav-link">a</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link">a</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link">a</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link">a</a>
+      </li>
+
+      <li class="nav-item">
+        <a class="nav-link">a</a>
+      </li>
+    </ul>
+  </div> -->

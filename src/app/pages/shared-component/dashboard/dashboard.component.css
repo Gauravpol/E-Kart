@@ -1,0 +1,80 @@
+.containers {
+  height: auto;
+  padding: 0.5rem;
+  background-color: #e7e9e9;
+}
+
+.carousel-indicators button {
+  width: 7px;
+  height: 7px;
+  border-radius: 100%;
+}
+
+h2 {
+  font-family: "Afacad", sans-serif;
+  font-size: 1.3rem;
+  padding: 15px 20px;
+}
+
+.lines {
+  text-align: center;
+  font-family: "Afacad", sans-serif;
+}
+.card {
+  margin: 20px auto;
+  border-radius: 0px;
+}
+
+.grid-container {
+  display: flex;
+  overflow: scroll;
+}
+
+.card-body {
+  display: inline-flex;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 15px;
+  border: 2px solid rgb(228, 228, 228);
+}
+
+.grid-container::-webkit-scrollbar {
+  overflow-x: hidden;
+}
+
+.recommendation {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  justify-content: space-between;
+  gap: 15px;
+}
+
+.recommendation::-webkit-scrollbar {
+  overflow-x: hidden;
+}
+
+.recommendation-container {
+  display: flex;
+  min-width: max-content;
+  background-color: white;
+}
+
+.suggestion-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3px;
+}
+.offers {
+  color: green;
+  font-size: 1.2rem;
+}
+
+.today-offer {
+  margin: 5px 0;
+  background-color: rgb(203, 3, 36);
+  color: white;
+  border-radius: 5px;
+  font-size: 0.8rem;
+  padding: 0.1rem;
+}

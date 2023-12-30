@@ -1,0 +1,80 @@
+
+.header-content{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  justify-content: space-around;
+  /* padding: 0.3rem; */
+  /* border: 2px solid green; */
+
+}
+.searchbar {
+  width: 40vw;
+  font-family: "Afacad", sans-serif;
+  /* margin-left: 4rem; */
+  height: min-content;
+  padding: 8px 15px;
+}
+
+.navbar-brand {
+  font-family: "Afacad", sans-serif;
+  font-size: 1.9rem;
+  color: greenyellow;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  margin-top: -10px;
+  /* margin-left: 4rem; */
+}
+.sub-mainT {
+  color: #0d6efd;
+  font-size: 1.5rem;
+}
+
+button[type="submit"] {
+  cursor: default;
+
+}
+
+.searchIcon {
+  position: relative;
+  right: 50px;
+  bottom: 5px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-decoration {
+  -webkit-appearance: none;
+}
+
+.side-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.side-item .nav-item {
+  list-style-type: none;
+}
+
+.side-item a {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  font-size: 1.1rem;
+  text-transform: capitalize;
+  font-family: "Afacad", sans-serif;
+  color: rgb(99, 98, 98);
+}
+
+.side-item i {
+  color: rgb(99, 98, 98);
+  font-size: 1.3em;
+}
+.side-item .fa-chevron-down{
+  font-size: 0.8em;
+}
+
+
+
