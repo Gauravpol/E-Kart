@@ -1,17 +1,18 @@
 
-.header-content{
+.header-content {
   display: flex;
   flex-direction: row;
   width: 100%;
   justify-content: space-around;
-  /* padding: 0.3rem; */
-  /* border: 2px solid green; */
-
 }
+
+/* .navbar {
+  border-bottom: 1px solid #cccccc; 
+} */
+
 .searchbar {
   width: 40vw;
   font-family: "Afacad", sans-serif;
-  /* margin-left: 4rem; */
   height: min-content;
   padding: 8px 15px;
 }
@@ -23,7 +24,6 @@
   font-weight: 700;
   letter-spacing: 0.05em;
   margin-top: -10px;
-  /* margin-left: 4rem; */
 }
 .sub-mainT {
   color: #0d6efd;
@@ -32,7 +32,6 @@
 
 button[type="submit"] {
   cursor: default;
-
 }
 
 .searchIcon {
@@ -50,7 +49,7 @@ input[type="search"]::-webkit-search-results-decoration {
 
 .side-item {
   display: flex;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 }
 
@@ -72,9 +71,50 @@ input[type="search"]::-webkit-search-results-decoration {
   color: rgb(99, 98, 98);
   font-size: 1.3em;
 }
-.side-item .fa-chevron-down{
-  font-size: 0.8em;
+.side-item .fa-chevron-down {
+  font-size: 0.6em;
+  position: relative;
+  transition: transform 0.1s ease;
 }
 
+.side-item .fa-chevron-up{
+  transform: rotate(-180deg);
+}
 
+/* parent of submenu position set */
+.side-item > li {
+  position: relative;
+  padding-bottom: 5px;
+}
 
+.side-item > li:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  width: 150px;
+  background: white;
+  top: 48px;
+  left: 0px;
+  position: absolute;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  display: none;
+  /* border: 2px solid red; */
+}
+.submenu a {
+  height: 40px;
+
+  cursor: pointer;
+}
+.submenu i {
+  font-size: 1rem;
+}
+
+.submenu .arrow-up {
+  position: absolute;
+  top: -30px;
+  font-size: 4em;
+  left: 50px;
+  color: white !important;
+}

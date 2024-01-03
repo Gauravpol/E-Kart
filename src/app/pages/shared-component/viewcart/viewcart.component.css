@@ -10,13 +10,14 @@
 .content-wrapper {
   display: flex;
   gap: 20px;
-  padding: 1rem
+  padding: 0.5rem;
 }
 
 .cart-content {
   /* width: 60vw; */
   width: fit-content;
   border: 2px solid rgb(227, 227, 227);
+  cursor: default;
 }
 
 .title {
@@ -91,12 +92,12 @@ h4 {
 }
 
 .quantity-btn {
-  border-radius: 50%;
+  border-radius: 20%;
   cursor: pointer;
   padding: 5px 10px;
   border: 1px solid gray;
   margin: 0 5px;
-  font-weight:bold;
+  font-weight: bold;
 }
 
 .quantity-input {
@@ -105,7 +106,6 @@ h4 {
   border: 1px solid gray;
   border-radius: 2px;
 }
-
 
 .image-column img {
   max-height: 450px;
@@ -116,7 +116,6 @@ h4 {
 .image-column img:hover {
   transform: scale(1.1);
 }
-
 
 .details-column {
   flex: 1;
@@ -146,6 +145,21 @@ h4 {
   font-weight: 500;
   border: none;
 }
+
+
+.saved-later-content{
+  background-color: white;
+  margin-top: 1rem;
+}
+
+  
+.save-title{
+  display: flex;
+  padding: 10px 25px;
+  border-bottom: 1px solid #ccc;
+
+}
+
 
 .price-content {
   /* width: 25vw; */
@@ -179,7 +193,6 @@ h4 {
 
   .price-content {
     width: 100%;
-    margin-top: 20px; 
+    margin-top: 20px;
   }
 }
-

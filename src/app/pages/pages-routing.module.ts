@@ -4,6 +4,7 @@ import { DashboardComponent } from './shared-component/dashboard/dashboard.compo
 import { PagesComponent } from './pages/pages.component';
 import { ViewcartComponent } from './shared-component/viewcart/viewcart.component';
 import { ElectronicsComponent } from './product/categories/electronics/electronics.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 const routes: Routes = [
   {path:'',component:PagesComponent,
@@ -11,6 +12,7 @@ const routes: Routes = [
   children:[
     {path:'Dashboard',component:DashboardComponent},
     {path:'viewCart',component:ViewcartComponent},
+    {path:'product-Details',component:ProductDetailsComponent},
     {path:'Electronics',component:ElectronicsComponent},
     {path:'',redirectTo:'/pages/Dashboard',pathMatch:'full'}
   ]

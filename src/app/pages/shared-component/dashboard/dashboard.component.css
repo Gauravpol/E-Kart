@@ -10,6 +10,29 @@
   border-radius: 100%;
 }
 
+
+.custom-carousel-btn{
+  width: 3%;
+  opacity: 1;
+  background: white;
+  height: 40%;
+  margin-top: 65px;
+
+}
+.custom-carousel-btn i{
+  color: rgb(42, 41, 41) !important;
+  font-size: 1.7em;
+}
+
+.carousel-control-prev  {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+.carousel-control-next  {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
 h2 {
   font-family: "Afacad", sans-serif;
   font-size: 1.3rem;

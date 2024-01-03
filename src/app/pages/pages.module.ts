@@ -12,6 +12,7 @@ import { MensComponent } from './product/categories/mens/mens.component';
 import { WomensComponent } from './product/categories/womens/womens.component';
 import { HomeFurnitureComponent } from './product/categories/home-furniture/home-furniture.component';
 import { SportsBooksComponent } from './product/categories/sports-books/sports-books.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
 
 
 @NgModule({
@@ -27,6 +28,7 @@ import { SportsBooksComponent } from './product/categories/sports-books/sports-b
     HomeFurnitureComponent,
     SportsBooksComponent,
     ViewcartComponent,
+    ProductDetailsComponent,
     
   ],
   imports: [

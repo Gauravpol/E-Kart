@@ -2,7 +2,7 @@
     background-color: rgb(6, 3, 32);
     color: white;
     text-align: center;
-    height: max-content;
+    height: fit-content;
   }
   
   .list-wrapper {

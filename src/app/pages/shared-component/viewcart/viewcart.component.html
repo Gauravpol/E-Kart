@@ -19,7 +19,7 @@
 
       <div class="cart-item mt-3">
         <div class="image-content">
-          <div class="image-column">
+          <div class="image-column"  routerLink="/pages/product-Details">
             <img
               src="../assets/cart-Images/sweat-shirt.webp"
               class="d-block"
@@ -46,7 +46,7 @@
         </div>
 
         <div class="details-column">
-          <h5 style="font-size: 1.1rem">
+          <h5 style="font-size: 1.1rem"  routerLink="/pages/product-Details">
             Men Full Sleeve Printed Hooded Sweatshirt
          
             <span
@@ -75,7 +75,7 @@
 
       <div class="cart-item mt-3">
         <div class="image-content">
-        <div class="image-column">
+        <div class="image-column"  routerLink="/pages/product-Details">
           <img
             src="../assets/Images/shave.webp"
             class="d-block"
@@ -101,11 +101,11 @@
         </div>
         </div>
         <div class="details-column">
-          <h5>Syska HT200U Trimmer 40 min Runtime 5 Length Settings</h5>
+          <h5 style="font-size: 1.1rem"  routerLink="/pages/product-Details" >Syska HT200U Trimmer 40 min Runtime 5 Length Settings</h5>
           <p style="color: gray">Black</p>
-          <h4 style="color: red">Out Of Stock</h4>
+          <h4 style="color: red" class="mt-5">Out Of Stock</h4>
 
-          <div class="btns">
+          <div class="btns mt-5">
             <button class="btn border-0">Save For Later</button>
             <button class="btn border-0">Remove</button>
           </div>
@@ -114,7 +114,7 @@
 
       <div class="cart-item mt-3">
         <div class="image-content">
-        <div class="image-column">
+        <div class="image-column"  routerLink="/pages/product-Details">
           <img
             src="../assets/Images/keyboard.webp"
             class="d-block"
@@ -140,7 +140,7 @@
         </div>
         </div>
         <div class="details-column">
-          <h5 style="font-size: 1.1rem">
+          <h5 style="font-size: 1.1rem"  routerLink="/pages/product-Details">
             HP 150 wired USB Desktop 
 
 
@@ -176,7 +176,142 @@
       <div class="cart-content-footer">
         <button class="place-btn">Place Order</button>
       </div>
+
+       <!-- saved-later content -->
+    <div class="saved-later-content">
+      <div class="save-title">
+        <h4>Saved For Later (3)</h4>
+      </div>
+
+      <div class="cart-item mt-3">
+        <div class="image-content">
+        <div class="image-column"  routerLink="/pages/product-Details">
+          <img
+            src="../assets/cart-Images/laptop.webp"
+            class="d-block"
+            alt="..."
+            style="max-height: 250px; width: 150px"
+          />
+        </div>
+        
+        <div class="quantity-column">
+          <div class="quantity">
+            <button class="quantity-btn minus-btn" (click)="decreaseQuantity()"  [disabled]="isInCart"
+              >-</button
+            >
+            <input
+              type="text"
+              [value]="quantity"
+              class="quantity-input"
+              disabled
+            />
+            <button class="quantity-btn plus-btn" (click)="increaseQuantity()"  [disabled]="isInCart"
+              >+</button
+            >
+          </div>
+        </div>
+        </div>
+        <div class="details-column">
+          <h5 style="font-size: 1.1rem"  routerLink="/pages/product-Details">
+            Lenovo Ideapad S145 Intel Core i3 10th Gen 1005G1
+
+
+            <span style="font-size: 0.8rem; color: gray;"
+              ><br>Delivery by Tomorrow, Tue | </span
+            ><span style="text-decoration: line-through; color: gray">₹70</span
+            ><span class="common-text"> Free</span>
+           
+          </h5>
+          <p style="color: gray">15.6 inch, Grey, 1.85 kg, With MS Office</p>
+
+          <p style="color: gray">Seller:SVPeripherals</p>
+          <div>
+            <p>
+              <span style="text-decoration: line-through; color: grey">
+                ₹37,800 </span
+              ><span style="margin-left: 10px; font-size: 1.2rem"> ₹48,190</span>
+              <span class="common-text" style="margin-left: 10px"> 50% Off</span
+              ><span class="common-text" style="margin-left: 15px">
+                2 offers applied</span
+              >
+            </p>
+          </div>
+
+          <div class="btns">
+            <button class="btn border-0">Move To Cart</button>
+            <button class="btn border-0">Remove</button>
+          </div>
+        </div>
+      </div>
+
+
+      <div class="cart-item mt-3">
+       
+
+        <div class="image-content">
+          <div class="image-column"  routerLink="/pages/product-Details">
+            <img
+              src="../assets/cart-Images/sweat-shirt.webp"
+              class="d-block"
+              alt="..."
+              style="max-height: 250px; width: 150px"
+            />
+          </div>
+  
+          <div class="quantity-column">
+            <div class="quantity">
+              <button  class="quantity-btn minus-btn"  (click)="decreaseQuantity()"  [disabled]="isInCart"
+                >-</button 
+              >
+              <input type="text" [value]="quantity" class="quantity-input" disabled />
+
+              <button  class="quantity-btn plus-btn" (click)="increaseQuantity()"  [disabled]="isInCart"
+                >+</button 
+              >
+            </div>
+          </div>
+        </div>
+  
+        <div class="details-column">
+          <h5 style="font-size: 1.1rem"  routerLink="/pages/product-Details">
+            Men Full Sleeve Printed Hooded Sweatshirt
+         
+            <span
+              style="font-size: 0.8rem; color: gray;"
+              ><br>Delivery by Sat Jan 6 |</span
+            ><span class="common-text"> Free</span>
+           
+          </h5>
+          <p style="color: gray">Size: L</p>
+          <p style="color: gray">Seller:FIONAATRENDZ</p>
+          <div>
+            <p>
+              <span style="text-decoration: line-through; color: grey">
+                ₹999 </span
+              ><span style="margin-left: 10px; font-size: 1.2rem"> ₹474</span>
+              <span class="common-text"> 52% Off</span>
+            </p>
+          </div>
+  
+          <div class="btns">
+            <button class="btn border-0">Move To Cart</button>
+            <button class="btn border-0">Remove</button>
+          </div>
+        </div>
+      </div>
+
+
+     
+  
+      </div>
+      
     </div>
+
+   
+
+
+
+
 
     <!-- price-content -->
     <div class="price-content">

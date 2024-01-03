@@ -7,20 +7,22 @@ import * as bootstrap from 'bootstrap';
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.css']
 })
-export class HeaderComponent implements OnInit, AfterViewInit {
+export class HeaderComponent implements OnInit {
   constructor(private elementRef: ElementRef) {}
 
-  ngAfterViewInit(): void {
-    const popoverTriggerEl = this.elementRef.nativeElement.querySelector('#popoverBtn');
-    const popoverContentEl = document.getElementById('popoverContent');
+  // ngAfterViewInit(): void {
+  //   const popoverTriggerEl = this.elementRef.nativeElement.querySelector('#popoverBtn');
+  //   const popoverContentEl = document.getElementById('popoverContent');
 
-    if (popoverTriggerEl && popoverContentEl) {
-      const popover = new bootstrap.Popover(popoverTriggerEl, {
-        content: () => popoverContentEl.innerHTML,
-        html: true,
-      });
-    }
-  }
+  //   if (popoverTriggerEl && popoverContentEl) {
+  //     const popover = new bootstrap.Popover(popoverTriggerEl, {
+  //       content: () => popoverContentEl.innerHTML,
+  //       html: true,
+  //     });
+  //   }
+  // }
+
+  isSubMenuOpen:boolean = false;
 
   ngOnInit(){
 
