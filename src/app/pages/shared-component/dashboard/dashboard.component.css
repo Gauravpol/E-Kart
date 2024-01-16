@@ -1,6 +1,6 @@
 .containers {
-  height: auto;
-  padding: 0.5rem;
+  height: fit-content;
+  padding: 1rem;
   background-color: #e7e9e9;
 }
 
@@ -10,84 +10,83 @@
   border-radius: 100%;
 }
 
-
-.custom-carousel-btn{
+.custom-carousel-btn {
   width: 3%;
   opacity: 1;
   background: white;
-  height: 40%;
+  height: 35%;
   margin-top: 65px;
-
 }
-.custom-carousel-btn i{
+.custom-carousel-btn i {
   color: rgb(42, 41, 41) !important;
-  font-size: 1.7em;
+  font-size: 0.8em;
 }
 
-.carousel-control-prev  {
+.carousel-control-prev {
   border-top-right-radius: 5px;
   border-bottom-right-radius: 5px;
 }
-.carousel-control-next  {
+.carousel-control-next {
   border-top-left-radius: 5px;
   border-bottom-left-radius: 5px;
 }
 
-h2 {
-  font-family: "Afacad", sans-serif;
-  font-size: 1.3rem;
-  padding: 15px 20px;
+.modified {
+  height: 270px;
+  background: white;
 }
-
-.lines {
-  text-align: center;
-  font-family: "Afacad", sans-serif;
-}
-.card {
-  margin: 20px auto;
-  border-radius: 0px;
-}
-
-.grid-container {
+/* .modified .row>div{ */
+.modified .row {
   display: flex;
-  overflow: scroll;
+  flex-wrap: nowrap;
 }
 
-.card-body {
-  display: inline-flex;
-  justify-content: center;
-  flex-direction: column;
+.title {
+  padding: 5px 15px;
+  font-family: "Afacad", sans-serif;
+}
+
+.image-box {
+  width: 100%;
+  height: fit-content;
   margin: 0 15px;
-  border: 2px solid rgb(228, 228, 228);
 }
 
-.grid-container::-webkit-scrollbar {
-  overflow-x: hidden;
+/* .image-box .row{
+  background: rgb(255, 25, 25)!important;
+} */
+
+.image-box .row .col {
+  /* border: 2px solid rgb(0, 0, 0); */
 }
 
-.recommendation {
+.card-item {
   display: flex;
-  flex-direction: row;
-  overflow: scroll;
-  justify-content: space-between;
-  gap: 15px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  border: 2px solid #e4e4e4;
+  font-family: "Afacad", sans-serif;
+  /* height: 300px; */
 }
 
-.recommendation::-webkit-scrollbar {
-  overflow-x: hidden;
+.card-item img {
+  margin: 10px;
+  max-width: 160px;
+  height: 85px;
+  /* height: 50%; */
+  object-fit: cover;
+}
+.description p {
+  margin: 0px 0 10px 0;
+  line-height: normal;
+  font-family: "Afacad", sans-serif;
+}
+.dark-font {
+  font-weight: 600;
 }
 
-.recommendation-container {
-  display: flex;
-  min-width: max-content;
-  background-color: white;
-}
-
-.suggestion-container {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 3px;
-}
 .offers {
   color: green;
   font-size: 1.2rem;
@@ -100,4 +99,86 @@ h2 {
   border-radius: 5px;
   font-size: 0.8rem;
   padding: 0.1rem;
+}
+
+
+/* recommendation styles */
+.recommendation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.recommendation::-webkit-scrollbar {
+    overflow-x: hidden;
+  }
+
+
+.suggestion-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 1rem;
+}
+.recommand-card {
+  display: flex;
+  min-width: 450px;
+  background-color: white;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+.recommand-card .image-box {
+  border: 2px solid #e4e4e4;
+  margin: 0;
+}
+
+.recommand-card img {
+  width: 160px;
+  height: 160px;
+  padding: 0.8rem;
+}
+.recommand-card .description p {
+  margin: 0;
+  line-height: normal;
+  font-family: "Afacad", sans-serif;
+}
+
+.suggest-img img {
+  width: 240px;
+  height: 380px;
+}
+
+@media screen and (max-width: 568px) {
+  .recommendation {
+    flex-direction: column;
+  }
+
+  .recommand-card {
+    min-width: 100%;
+  }
+
+  .suggestion-container img {
+    width: 100%;
+  }
+}
+
+
+@media screen and (max-width: 1130px) {
+  .image-box {
+    overflow-x: scroll;
+    white-space: nowrap;
+  }
+  /* .image-box::-webkit-scrollbar {
+    overflow-x: hidden;
+  } */
+  .custom-carousel-btn {
+    display: none;
+  }
+
+
+ 
 }

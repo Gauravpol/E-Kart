@@ -1,0 +1,123 @@
+.container-fluid {
+  height: max-content;
+  padding: 15px 20px;
+  background-color: #e7e9e9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.container-wrapper {
+  display: flex;
+  gap: 20px;
+  padding: 1rem;
+  background-color: white;
+}
+
+/* .image-content */
+.image-content {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  /* border: 2px solid red; */
+}
+
+
+.footer-btn {
+  display: flex;
+  gap: 10px;
+  font-family: "Afacad", sans-serif;
+
+}
+
+.add-btn {
+  width: 98%;
+  padding: 18px 8px;
+  border-radius: 2px;
+  border: none;
+  float: left;
+  background: #ff9f00;
+  color: white;
+}
+
+.buy-btn {
+  width: 98%;
+  background: #fb641b;
+  color: white;
+  float: right;
+}
+
+.add-btn:hover{
+  background: #ff9f00;
+  color: white;
+
+}
+
+.buy-btn:hover{
+  background: #fb641b;
+  color: white;
+
+}
+
+.image-sticky-wrapper {
+  position: sticky;
+  top: 0;
+}
+
+
+
+
+
+/* Details-content  */
+.details-content {
+  display: flex;
+  /* border: 2px solid rgb(255, 47, 47); */
+  flex-direction: column;
+  
+
+  
+}
+
+.map-menu{
+    display: flex;
+    font-size: 14px;
+    font-family: "Afacad", sans-serif;
+    color: gray;
+    
+}
+
+.menu-text {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  width: 80%; /* Ensures the block-level element takes full width of the parent */
+}
+
+
+.map-menu button{
+    margin-left: auto;
+    font-size: 1em;
+    color: gray;
+}
+
+.offers{
+    font-family: "Afacad", sans-serif;
+
+
+}
+
+h1,h6,h4{
+    font-family: "Afacad", sans-serif;
+
+}
+
+/* product-details styles */
+
+.product-details{
+  font-family: "Afacad", sans-serif;
+
+}
+.header-title h1{
+  font-size: 1.7rem;
+}
