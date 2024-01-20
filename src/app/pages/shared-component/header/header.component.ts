@@ -10,21 +10,56 @@ import * as bootstrap from 'bootstrap';
 export class HeaderComponent implements OnInit {
   constructor(private elementRef: ElementRef) {}
 
-  // ngAfterViewInit(): void {
-  //   const popoverTriggerEl = this.elementRef.nativeElement.querySelector('#popoverBtn');
-  //   const popoverContentEl = document.getElementById('popoverContent');
 
-  //   if (popoverTriggerEl && popoverContentEl) {
-  //     const popover = new bootstrap.Popover(popoverTriggerEl, {
-  //       content: () => popoverContentEl.innerHTML,
-  //       html: true,
-  //     });
-  //   }
-  // }
 
   isSubMenuOpen:boolean = false;
+  
 
-  ngOnInit(){
 
-  }
+  categoryList = [
+    {
+      name:'Electronic',
+      Link:'/pages/Electronics',
+      icon:'fa fa-chevron-down'
+    },
+    {
+      name:'Today\'s Deals',
+      icon:'fa fa-chevron-down',
+
+    },
+    {
+      name:'Tv & Appliances',
+      icon:'fa fa-chevron-down'
+
+    },
+    {
+      name:'Mens',
+      icon:'fa fa-chevron-down'
+
+    },
+    {
+      name:'Women',
+      icon:'fa fa-chevron-down'
+
+    },
+    {
+      name:'Home & Furniture',
+      icon:'fa fa-chevron-down'
+
+    },
+    {
+      name:'Sports,Books & More',
+      icon:'fa fa-chevron-down'
+
+    },
+  ]
+
+
+
+ngOnInit(){
+console.log("category list ->"+JSON.stringify(this.categoryList));
+
+
+}
+
 }

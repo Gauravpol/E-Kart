@@ -1,16 +1,40 @@
 
-.header-content {
+.header-wrapper {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  position: relative;
+}
+
+.header-top {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+
   display: flex;
   flex-direction: row;
-  width: 100%;
-  justify-content: space-around;
+  justify-content: space-evenly;
+  height: 3.5rem;
+  background-color: #fff;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.header-bottom {
+  background-color: rgb(6, 3, 32);
+  color: white;
+  text-align: center;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  top: 3.5rem;
+  position: relative;
+
 }
 
 .searchbar {
-  width: 40vw;
   font-family: "Afacad", sans-serif;
   height: min-content;
-  padding: 8px 15px;
+  padding: 7px 15px;
 }
 
 .navbar-brand {
@@ -19,7 +43,8 @@
   color: greenyellow;
   font-weight: 700;
   letter-spacing: 0.05em;
-  margin-top: -10px;
+  /* margin-top: -100px; */
+  
 }
 .sub-mainT {
   color: #0d6efd;
@@ -101,7 +126,6 @@ input[type="search"]::-webkit-search-results-decoration {
 }
 .submenu a {
   height: 40px;
-
   cursor: pointer;
 }
 .submenu i {
@@ -115,3 +139,67 @@ input[type="search"]::-webkit-search-results-decoration {
   left: 50px;
   color: white !important;
 }
+
+
+/* Header Bottom */
+.header-bottom {
+  background-color: rgb(6, 3, 32);
+  color: white;
+  text-align: center;
+  height: 2.6rem;
+}
+
+.category-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 0;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+  overflow-x: scroll; 
+}
+
+.category-list li {
+  list-style: none;
+  font-family: "Afacad", sans-serif;
+  font-size: 16px;
+  align-items: center;
+  text-align: center;
+}
+
+.category-list a {
+  position: relative;
+  display: inline-block;
+  text-decoration: none;
+  color: white;
+  cursor: pointer;
+}
+
+.category-list a::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: rgb(241, 35, 69);
+  transition: width 0.5s ease-in-out;
+}
+
+.category-list a:hover::before {
+  width: 100%;
+}
+
+
+
+@media screen and (max-width: 741px) {
+  .searchbar::placeholder {
+    display: none !important;
+    color: transparent;
+  }
+ 
+  
+
+}
+
+/* <i class="fa-solid fa-bars"></i> */

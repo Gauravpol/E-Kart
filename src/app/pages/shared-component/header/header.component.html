@@ -1,12 +1,15 @@
-<nav class="navbar fixed-top navbar-expand-lg bg-white py-0">
-  <div class="header-content">
-    <a class="navbar-brand mt-1" routerLink="/pages/Dashboard"
+  <div class="header-wrapper w-100">
+
+      <!-- Header Top -->
+      <div class="header-top">
+    <a class="navbar-brand" routerLink="/pages/Dashboard"
       >E-<span class="sub-mainT">kart</span></a
     >
 
     <form class="d-flex mt-2">
       <input
-        class="form-control searchbar"
+        class="form-control searchbar" style="min-width:40vw;"
+        
         type="search"
         placeholder="Search for Product, Brands, and More"
       />
@@ -14,6 +17,7 @@
         <i class="fas fa-search"></i>
       </button>
     </form>
+    
 
     <ul class="nav nav-pills side-item ">
       <li class="nav-item">
@@ -62,7 +66,20 @@
         </a>
       </li>
     </ul>
+    </div>
+
+
+     <!-- header-bottom -->
+     <div class="header-bottom">
+     <ul class="nav nav-pills category-list">
+      <li class="nav-item" *ngFor="let category of categoryList">
+        <a class="nav-link" [routerLink]="category.Link"><i class="{{category.icon}}"></i>{{ category.name }}</a>
+      </li>
+    </ul>
+    </div>
+    
   </div>
-</nav>
+
+ 
 
 
