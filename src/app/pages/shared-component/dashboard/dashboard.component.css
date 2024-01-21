@@ -77,7 +77,14 @@
   height: 85px;
   /* height: 50%; */
   object-fit: cover;
+  transition: transform 0.1s ease;
+
 }
+
+.card-item img:hover {
+  transform: scale(1.2);
+}
+
 .description p {
   margin: 0px 0 10px 0;
   line-height: normal;
@@ -140,6 +147,10 @@
   width: 160px;
   height: 160px;
   padding: 0.8rem;
+  transition:transform 0.1s ease ;
+}
+.recommand-card img:hover {
+transform: scale(1.1);
 }
 .recommand-card .description p {
   margin: 0;

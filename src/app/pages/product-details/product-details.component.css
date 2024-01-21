@@ -1,11 +1,10 @@
 .container-fluid {
   height: max-content;
-  padding: 15px 20px;
+  padding: 10px 20px;
   background-color: #e7e9e9;
   display: flex;
   justify-content: center;
   align-items: center;
-
 }
 
 .container-wrapper {
@@ -20,15 +19,25 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
+
   /* border: 2px solid red; */
 }
+.image-column {
+  overflow: hidden;
+}
 
+.image-column img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.image-column:hover img {
+  transform: scale(1.1);
+}
 
 .footer-btn {
   display: flex;
   gap: 10px;
   font-family: "Afacad", sans-serif;
-
 }
 
 .add-btn {
@@ -48,16 +57,14 @@
   float: right;
 }
 
-.add-btn:hover{
+.add-btn:hover {
   background: #ff9f00;
   color: white;
-
 }
 
-.buy-btn:hover{
+.buy-btn:hover {
   background: #fb641b;
   color: white;
-
 }
 
 .image-sticky-wrapper {
@@ -65,26 +72,19 @@
   top: 0;
 }
 
-
-
-
-
 /* Details-content  */
 .details-content {
   display: flex;
   /* border: 2px solid rgb(255, 47, 47); */
   flex-direction: column;
-  
-
-  
+  width: 900px;
 }
 
-.map-menu{
-    display: flex;
-    font-size: 14px;
-    font-family: "Afacad", sans-serif;
-    color: gray;
-    
+.map-menu {
+  display: flex;
+  font-size: 14px;
+  font-family: "Afacad", sans-serif;
+  color: gray;
 }
 
 .menu-text {
@@ -94,30 +94,106 @@
   width: 80%; /* Ensures the block-level element takes full width of the parent */
 }
 
-
-.map-menu button{
-    margin-left: auto;
-    font-size: 1em;
-    color: gray;
+.map-menu button {
+  margin-left: auto;
+  font-size: 1em;
+  color: gray;
 }
 
-.offers{
-    font-family: "Afacad", sans-serif;
+.offers {
+  font-family: "Afacad", sans-serif;
+  font-size: 0.9rem;
+}
 
+h1,
+h6,
+h4 {
+  font-family: "Afacad", sans-serif;
+}
+
+.value{
+  font-family: "Afacad", sans-serif;
+  font-weight: 500;
 
 }
 
-h1,h6,h4{
-    font-family: "Afacad", sans-serif;
-
+.size-details {
+  display: flex;
+  flex-direction: column;
 }
+
+.size-options {
+  display: flex;
+  margin-left: 3rem;
+}
+
+.size {
+  border: 1px solid rgb(229, 218, 218);
+  padding: 5px 10px;
+  margin-right: 5px;
+  font-size: 1.3rem;
+}
+
+.size-chart {
+  margin-left: 10px;
+  color: #2874f0;
+}
+
 
 /* product-details styles */
 
-.product-details{
+.product-details {
   font-family: "Afacad", sans-serif;
-
 }
-.header-title h1{
+.header-title h1 {
   font-size: 1.7rem;
 }
+
+/* review styles*/
+.rate {
+  display: flex;
+  flex-direction: column;
+}
+
+.comment-content {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  color: gray;
+}
+.comment-icons {
+  display: flex;
+  gap: 30px;
+}
+
+.rating {
+  display: inline-flex;
+  width: max-content;
+  padding: 2px 7px;
+  border-radius: 12px;
+  font-size: 12px;
+  background-color: #26a541;
+  color: white;
+  align-items: center;
+}
+
+.rating i {
+  font-size: 8px;
+  margin-left: 3px;
+}
+.header-title .rating {
+  font-size: 22px;
+}
+
+.header-title .rating i{
+  font-size: 13px;
+}
+.rating-head h4{
+  color: gray;
+  font-size: 1rem;
+
+}
+.rating-head .rating{
+  font-size: 16px;
+}
+

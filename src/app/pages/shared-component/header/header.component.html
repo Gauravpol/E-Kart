@@ -73,7 +73,7 @@
      <div class="header-bottom">
      <ul class="nav nav-pills category-list">
       <li class="nav-item" *ngFor="let category of categoryList">
-        <a class="nav-link" [routerLink]="category.Link"><i class="{{category.icon}}"></i>{{ category.name }}</a>
+        <a class="nav-link" [routerLink]="category.Link">{{ category.name }} <i class="{{category.icon}}"></i> </a>
       </li>
     </ul>
     </div>
