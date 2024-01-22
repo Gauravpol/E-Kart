@@ -10,42 +10,37 @@
 
   <div class="main-content">
     <div class="login-container">
-      <form>
+      <form [formGroup]="signUpForm">
         <h3 class="title">Create Account</h3>
 
         <div class="input-group mt-5">
           <span class="input-group-text">
             <i class="fas fa-user"></i>
           </span>
-          <input type="text" placeholder="firstname" class="form-control" />
+          <input type="text" placeholder="Enter Name" class="form-control"  formControlName="name"/>
         </div>
 
-        <div class="input-group mt-3">
-          <span class="input-group-text">
-            <i class="fas fa-user"></i>
-          </span>
-          <input type="text" placeholder="lastname" class="form-control" />
-        </div>
+       
 
         <div class="input-group mt-3">
           <span class="input-group-text">
             <i class="fas fa-phone"></i>
           </span>
-          <input type="text" placeholder="mobilenumber" class="form-control" />
+          <input type="text" placeholder="Mobile Number" class="form-control" formControlName="mobileNumber"/>
         </div>
 
         <div class="input-group mt-3">
           <span class="input-group-text">
             <i class="fas fa-envelope"></i>
           </span>
-          <input type="text" placeholder="Email" class="form-control" />
+          <input type="text" placeholder="Email" class="form-control" formControlName="email" />
         </div>
 
         <div class="input-group mt-3">
           <span class="input-group-text pr-3" id="passwordToggle">
             <i class="fas fa-lock pl-2"></i>
           </span>
-          <input type="password" placeholder="Password" class="form-control" />
+          <input type="password" placeholder="Password" class="form-control" formControlName="password"/>
           <span class="input-group-text" id="passwordToggle">
             <i class="fas fa-eye-slash"></i>
           </span>
@@ -55,7 +50,6 @@
             type="submit"
             class="btn btn-primary"
             (click)="onsubmit()"
-            routerLink="/login"
           >
             Register
           </button>

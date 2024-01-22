@@ -19,8 +19,11 @@
   display: flex;
   flex-direction: column;
   width: fit-content;
+}
 
-  /* border: 2px solid red; */
+.image-sticky-wrapper {
+  position: sticky;
+  top: 0;  
 }
 .image-column {
   overflow: hidden;
@@ -67,11 +70,6 @@
   color: white;
 }
 
-.image-sticky-wrapper {
-  position: sticky;
-  top: 0;
-}
-
 /* Details-content  */
 .details-content {
   display: flex;
@@ -111,10 +109,9 @@ h4 {
   font-family: "Afacad", sans-serif;
 }
 
-.value{
+.value {
   font-family: "Afacad", sans-serif;
   font-weight: 500;
-
 }
 
 .size-details {
@@ -139,6 +136,70 @@ h4 {
   color: #2874f0;
 }
 
+.available-offers i {
+  color: #26a541;
+  font-size: 1.1rem;
+  margin-right: 10px;
+}
+
+.address i {
+  color: #2874f0;
+}
+.address-head {
+  display: flex;
+  flex-direction: row;
+}
+.service-info {
+  display: flex;
+  margin-left: auto;
+  gap: 100px;
+}
+.service-info h6 span {
+  color: white;
+  background-color: #2874f0;
+  border-radius: 50%;
+  height: 16px;
+  margin: 2px 8px 0 0;
+  width: 16px;
+  float: left;
+  text-align: center;
+}
+
+.question-icon {
+  color: gray;
+  font-size: 0.5rem;
+  border: 1px solid gray;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  padding: 3px 0;
+  text-align: center;
+  cursor: pointer;
+}
+
+.deliver {
+  display: flex;
+  flex-direction: column;
+}
+.view-d {
+  color: #2874f0;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.offer-color {
+  color: #26a541;
+}
+
+.dropdown button {
+  background-color: #f8f9fa;
+  border: 1px solid rgb(183, 177, 177);
+  margin-bottom: 10px;
+  border-radius: 0;
+}
+
+.dropdown button:hover {
+  background-color: white !important;
+}
 
 /* product-details styles */
 
@@ -185,15 +246,13 @@ h4 {
   font-size: 22px;
 }
 
-.header-title .rating i{
+.header-title .rating i {
   font-size: 13px;
 }
-.rating-head h4{
+.rating-head h4 {
   color: gray;
   font-size: 1rem;
-
 }
-.rating-head .rating{
+.rating-head .rating {
   font-size: 16px;
 }
-
